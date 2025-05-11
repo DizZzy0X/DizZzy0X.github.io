@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePath - Guías para Videojuegos</title>
+    <style>
+        /* Estilos CSS integrados (también puedes usar un archivo externo) */
+        :root {
+            --primary: #2a75bb; /* Azul Gaming */
+            --secondary: #ffcc00; /* Amarillo contraste */
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: var(--dark);
+            padding: 0.5rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            padding: 0;
+        }
+        nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .game-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .game-info {
+            padding: 1rem;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        /* Accesibilidad: contraste y focus */
+        a:focus, button:focus {
+            outline: 2px solid var(--secondary);
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera semántica -->
+    <header>
+        <h1>GamePath</h1>
+        <p>Guías para videojuegos: modos historia y online</p>
+    </header>
+
+    <!-- Navegación clara -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#guias">Guías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a GamePath</h2>
+            <p>Ayudamos a jugadores novatos a dominar sus juegos favoritos con guías detalladas.</p>
+        </section>
+
+        <section id="guias">
+            <h2>Guías Populares</h2>
+            <!-- Ejemplo de tarjeta de juego -->
+            <article class="game-card">
+                <img src="gta-5.jpg" alt="Grand Theft Auto V">
+                <div class="game-info">
+                    <h3>Grand theft Auto V</h3>
+                    <p>Guía completa del modo historia.</p>
+                    <a href="GTAV.html">Leer guía</a>
+                </div>
+            </article>
+
+            <!-- Otra tarjeta -->
+            <article class="game-card">
+                <img src="red dead 2.jpg" alt="Red Dead Redemption 2 ">
+                <div class="game-info">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>Trucos modo historia y para el modo online.</p>
+                    <a href="RD2.html">Leer guía</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer con información de contacto -->
+    <footer id="contacto">
+        <h3>Contacto</h3>
+        <p>¿Tienes sugerencias? Escríbenos a: <a href="mailto:contacto@gamepath.com">contacto@gamepath.com</a></p>
+        <p>&copy; 2025 GamePath. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
